@@ -10,49 +10,36 @@
 
 <!-- Navbar start -->
 <header class="w-full max-w-[1600px] h-auto flex items-center justify-between mx-auto mt-5 px-4 md:px-10 relative">
-  <!-- Left: Logo + Hamburger -->
   <div class="flex items-center space-x-4">
-    <!-- Hamburger Button -->
-    <button id="menu-btn" class="block md:hidden text-3xl text-gray-800 focus:outline-none">
-      ☰
-    </button>
-    <!-- Logo -->
+    <button id="menu-btn" class="block md:hidden text-3xl text-gray-800 focus:outline-none">☰</button>
     <div class="flex items-center space-x-2">
       <img src="./Pic/Logo.svg" alt="Logo">
     </div>
   </div>
-
-  <!-- Desktop Navigation -->
   <nav class="hidden md:block">
     <ul class="flex space-x-12 text-gray-800 text-base font-['Google_Sans']">
-      <li class="hover:text-green-700"><a href="#">Destinations</a></li>
-      <li class="hover:text-green-700"><a href="#">Hotels</a></li>
-      <li class="hover:text-green-700"><a href="#">Flights</a></li>
-      <li class="hover:text-green-700"><a href="#">Bookings</a></li>
+      <li class="hover:text-green-700 focus:text-green-700 active:text-green-700"><a href="#">Destinations</a></li>
+      <li class="hover:text-green-700 focus:text-green-700 active:text-green-700"><a href="#">Hotels</a></li>
+      <li class="hover:text-green-700 focus:text-green-700 active:text-green-700"><a href="#">Flights</a></li>
+      <li class="hover:text-green-700 focus:text-green-700 active:text-green-700"><a href="#">Bookings</a></li>
     </ul>
   </nav>
-
-  <!-- Buttons -->
   <div class="flex items-center space-x-3 sm:space-x-6">
-    <button class="w-20 sm:w-24 h-10 border border-gray-800 rounded-[5px] text-gray-800 text-sm sm:text-base font-medium hover:bg-[#e5533c] hover:text-white">Login</button>
-    <button class="w-20 sm:w-24 h-10 border border-gray-800 rounded-[5px] text-gray-800 text-sm sm:text-base font-medium hover:bg-[#e5533c] hover:text-white">Sign up</button>
+    <button class="w-20 sm:w-24 h-10 border border-gray-800 rounded-[5px] text-gray-800 text-sm sm:text-base font-medium hover:bg-[#e5533c] hover:text-white active:bg-[#e5533c] active:text-white focus:bg-[#e5533c] focus:text-white transition">Login</button>
+    <button class="w-20 sm:w-24 h-10 border border-gray-800 rounded-[5px] text-gray-800 text-sm sm:text-base font-medium hover:bg-[#e5533c] hover:text-white active:bg-[#e5533c] active:text-white focus:bg-[#e5533c] focus:text-white transition">Sign up</button>
     <div class="flex items-center space-x-1">
       <span class="text-gray-800 text-sm sm:text-base font-medium">EN </span>
-      <img class="w-4 h-4 sm:w-6 sm:h-6 hover:bg-yellow-300" src="./Pic/Group 46.svg" alt="">
+      <img class="w-4 h-4 sm:w-6 sm:h-6 hover:bg-yellow-300 active:bg-yellow-300 focus:bg-yellow-300" src="./Pic/Group 46.svg" alt="">
     </div>
   </div>
-
-  <!-- Mobile Sidebar -->
   <div id="menu" class="fixed top-0 left-0 w-64 h-full bg-white shadow-lg transform -translate-x-full transition-transform duration-300 md:hidden z-50">
     <div class="p-6">
-      <!-- Close Button -->
       <button id="close-btn" class="text-2xl text-gray-800 mb-6">✕</button>
-      <!-- Nav Links -->
       <ul class="space-y-6 text-gray-800 text-lg font-['Google_Sans']">
-        <li class="hover:text-green-700"><a href="#">Destinations</a></li>
-        <li class="hover:text-green-700"><a href="#">Hotels</a></li>
-        <li class="hover:text-green-700"><a href="#">Flights</a></li>
-        <li class="hover:text-green-700"><a href="#">Bookings</a></li>
+        <li class="hover:text-green-700 focus:text-green-700 active:text-green-700"><a href="#">Destinations</a></li>
+        <li class="hover:text-green-700 focus:text-green-700 active:text-green-700"><a href="#">Hotels</a></li>
+        <li class="hover:text-green-700 focus:text-green-700 active:text-green-700"><a href="#">Flights</a></li>
+        <li class="hover:text-green-700 focus:text-green-700 active:text-green-700"><a href="#">Bookings</a></li>
       </ul>
     </div>
   </div>
@@ -62,28 +49,18 @@
 
 <!-- Hero Section -->
 <section class="w-full max-w-[1600px] h-auto flex flex-col md:flex-row items-center justify-between mx-auto mt-10 px-4 md:px-10">
-  <!-- Left -->
   <div class="w-full md:w-[700px] space-y-6 text-center md:text-left">
     <p class="text-red-400 text-lg sm:text-xl font-bold uppercase">Best Destinations around the world</p>
-    <h1 class="text-indigo-950 text-4xl sm:text-6xl md:text-8xl font-bold leading-snug md:leading-[89px]">
-      Travel, enjoy and live a new and full life
-    </h1>
-    <p class="text-gray-500 text-sm sm:text-base leading-relaxed">
-      Built Wicket longer admire do barton vanity itself do in it. Preferred to sportsmen it engrossed listening.
-      Park gate sell they west hard for the.
-    </p>
+    <h1 class="text-indigo-950 text-4xl sm:text-6xl md:text-8xl font-bold leading-snug md:leading-[89px]">Travel, enjoy and live a new and full life</h1>
+    <p class="text-gray-500 text-sm sm:text-base leading-relaxed">Built Wicket longer admire do barton vanity itself do in it. Preferred to sportsmen it engrossed listening. Park gate sell they west hard for the.</p>
     <div class="flex flex-col sm:flex-row items-center justify-center md:justify-start gap-4 pt-6">
-      <button class="w-40 sm:w-44 h-12 sm:h-14 bg-amber-500 rounded-[10px] shadow-md text-white text-base sm:text-lg font-medium hover:bg-[#e5533c]">
-        Find out more
-      </button>
+      <button class="w-40 sm:w-44 h-12 sm:h-14 bg-amber-500 rounded-[10px] shadow-md text-white text-base sm:text-lg font-medium hover:bg-[#e5533c] active:bg-[#e5533c] focus:bg-[#e5533c] transition">Find out more</button>
       <div class="flex items-center">
         <img class="pt-2 sm:pt-6" src="./Pic/Play button.svg" alt="">
         <span class="text-zinc-500 ml-[-20px]">Play Demo</span>
       </div>
     </div>
   </div>
-
-  <!-- Right -->
   <div class="mt-8 md:mt-0 relative flex justify-center">
     <img class="w-[350px] sm:w-[500px] md:w-[700px] h-auto" src="./Pic/hero-main-log.png" alt="Hero">
     <img class="absolute top-[100px] sm:top-[140px] left-[60%] sm:left-[1000px] w-[80px] sm:w-[120px]" src="./Pic/plane.svg" alt="plane">
@@ -99,24 +76,23 @@
     <p class="text-gray-500 text-sm sm:text-lg font-semibold">CATEGORY</p>
     <h2 class="text-indigo-950 text-3xl sm:text-5xl font-bold">We Offer Best Services</h2>
   </div>
-
   <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mt-12">
-    <article class="bg-white rounded-[36px] shadow-lg p-6 text-center transition transform hover:-translate-y-4 hover:scale-105">
+    <article class="bg-white rounded-[36px] shadow-lg p-6 text-center transition transform hover:-translate-y-4 hover:scale-105 active:-translate-y-4 active:scale-105 focus:-translate-y-4 focus:scale-105">
       <img class="w-20 h-16 mx-auto mb-6" src="./Pic/Group 48.svg" alt="">
       <h3 class="text-indigo-950 text-lg sm:text-xl font-semibold mb-2">Best Flights</h3>
       <p class="text-gray-500 text-sm sm:text-base">Engrossed listening. Park gate sell they west hard for the.</p>
     </article>
-    <article class="bg-white rounded-[36px] shadow-lg p-6 text-center transition transform hover:-translate-y-4 hover:scale-105">
+    <article class="bg-white rounded-[36px] shadow-lg p-6 text-center transition transform hover:-translate-y-4 hover:scale-105 active:-translate-y-4 active:scale-105 focus:-translate-y-4 focus:scale-105">
       <img class="h-16 mx-auto mb-6" src="./Pic/plane.svg" alt="">
       <h3 class="text-indigo-950 text-lg sm:text-xl font-semibold mb-2">Calculated Weather</h3>
       <p class="text-gray-500 text-sm sm:text-base">Built Wicket longer admire do barton vanity itself do in it.</p>
     </article>
-    <article class="bg-white rounded-[36px] shadow-lg p-6 text-center transition transform hover:-translate-y-4 hover:scale-105">
+    <article class="bg-white rounded-[36px] shadow-lg p-6 text-center transition transform hover:-translate-y-4 hover:scale-105 active:-translate-y-4 active:scale-105 focus:-translate-y-4 focus:scale-105">
       <img class="w-10 h-16 mx-auto mb-6" src="./Pic/mike.png" alt="">
       <h3 class="text-indigo-950 text-lg sm:text-xl font-semibold mb-2">Local Events</h3>
       <p class="text-gray-500 text-sm sm:text-base">Barton vanity itself do in it. Preferd to men it engrossed listening.</p>
     </article>
-    <article class="bg-white rounded-[36px] shadow-lg p-6 text-center transition transform hover:-translate-y-4 hover:scale-105">
+    <article class="bg-white rounded-[36px] shadow-lg p-6 text-center transition transform hover:-translate-y-4 hover:scale-105 active:-translate-y-4 active:scale-105 focus:-translate-y-4 focus:scale-105">
       <img class="mx-auto mb-6" src="./Pic/Group 49.svg" alt="">
       <h3 class="text-indigo-950 text-lg sm:text-xl font-semibold mb-2">Customization</h3>
       <p class="text-gray-500 text-sm sm:text-base">We deliver outsourced aviation services for military customers.</p>
@@ -133,36 +109,27 @@
     <h2 class="text-indigo-950 text-3xl sm:text-5xl font-bold">Top Destinations</h2>
   </div>
   <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-    <article class="bg-white rounded-3xl shadow-lg overflow-hidden transition hover:-translate-y-2">
+    <article class="bg-white rounded-3xl shadow-lg overflow-hidden transition hover:-translate-y-2 active:-translate-y-2 focus:-translate-y-2">
       <img class="w-full h-[300px] sm:h-[457px] object-cover" src="./Pic/1.png" alt="">
       <div class="p-6">
         <h3 class="text-gray-500 text-base sm:text-lg">Rome, Italy</h3>
-        <div class="flex items-center mt-2 space-x-2 text-sm sm:text-base text-gray-500">
-          <img src="./Pic/navigation 1.svg" alt="">
-          <p>10 Days Trip</p>
-        </div>
+        <div class="flex items-center mt-2 space-x-2 text-sm sm:text-base text-gray-500"><img src="./Pic/navigation 1.svg" alt=""><p>10 Days Trip</p></div>
         <p class="mt-3 text-gray-500 text-base sm:text-lg">$5.42k</p>
       </div>
     </article>
-    <article class="bg-white rounded-3xl shadow-lg overflow-hidden transition hover:-translate-y-2">
+    <article class="bg-white rounded-3xl shadow-lg overflow-hidden transition hover:-translate-y-2 active:-translate-y-2 focus:-translate-y-2">
       <img class="w-full h-[300px] sm:h-[457px] object-cover" src="./Pic/2.jpg" alt="">
       <div class="p-6">
         <h3 class="text-gray-500 text-base sm:text-lg">London, UK</h3>
-        <div class="flex items-center mt-2 space-x-2 text-sm sm:text-base text-gray-500">
-          <img src="./Pic/navigation 1.svg" alt="">
-          <p>12 Days Trip</p>
-        </div>
+        <div class="flex items-center mt-2 space-x-2 text-sm sm:text-base text-gray-500"><img src="./Pic/navigation 1.svg" alt=""><p>12 Days Trip</p></div>
         <p class="mt-3 text-gray-500 text-base sm:text-lg">$4.2k</p>
       </div>
     </article>
-    <article class="bg-white rounded-3xl shadow-lg overflow-hidden transition hover:-translate-y-2">
+    <article class="bg-white rounded-3xl shadow-lg overflow-hidden transition hover:-translate-y-2 active:-translate-y-2 focus:-translate-y-2">
       <img class="w-full h-[300px] sm:h-[457px] object-cover" src="./Pic/3.png" alt="">
       <div class="p-6">
         <h3 class="text-gray-500 text-base sm:text-lg">Full Europe</h3>
-        <div class="flex items-center mt-2 space-x-2 text-sm sm:text-base text-gray-500">
-          <img src="./Pic/navigation 1.svg" alt="">
-          <p>28 Days Trip</p>
-        </div>
+        <div class="flex items-center mt-2 space-x-2 text-sm sm:text-base text-gray-500"><img src="./Pic/navigation 1.svg" alt=""><p>28 Days Trip</p></div>
         <p class="mt-3 text-gray-500 text-base sm:text-lg">$15k</p>
       </div>
     </article>
@@ -173,86 +140,39 @@
 
 <!-- Book Trip -->
 <section class="w-full max-w-[1114px] mx-auto py-16 px-4">
-  <!-- Heading -->
   <div class="mb-8 text-center">
     <p class="text-gray-500 text-sm sm:text-lg font-semibold">Easy and Fast</p>
-    <h2 class="text-indigo-950 text-3xl sm:text-5xl font-bold leading-snug">
-      Book your next trip in 3 easy steps
-    </h2>
+    <h2 class="text-indigo-950 text-3xl sm:text-5xl font-bold leading-snug">Book your next trip in 3 easy steps</h2>
   </div>
-
-  <!-- Grid -->
   <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-    <!-- Left Content -->
     <div class="space-y-10">
-      <!-- Step 1 -->
       <div class="flex items-start space-x-4">
-        <div class="w-12 h-16 flex items-center justify-center">
-          <img src="./Pic/Group 7.svg" alt="">
-        </div>
-        <div>
-          <h3 class="text-gray-600 text-base sm:text-lg font-bold">Choose Destination</h3>
-          <p class="text-gray-500 text-sm sm:text-base">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus.
-          </p>
-        </div>
+        <div class="w-12 h-16 flex items-center justify-center"><img src="./Pic/Group 7.svg" alt=""></div>
+        <div><h3 class="text-gray-600 text-base sm:text-lg font-bold">Choose Destination</h3><p class="text-gray-500 text-sm sm:text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus.</p></div>
       </div>
-
-      <!-- Step 2 -->
       <div class="flex items-start space-x-4">
-        <div class="w-12 h-16 flex items-center justify-center">
-          <img src="./Pic/Group 12.svg" alt="">
-        </div>
-        <div>
-          <h3 class="text-gray-600 text-base sm:text-lg font-bold">Make Payment</h3>
-          <p class="text-gray-500 text-sm sm:text-base">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus.
-          </p>
-        </div>
+        <div class="w-12 h-16 flex items-center justify-center"><img src="./Pic/Group 12.svg" alt=""></div>
+        <div><h3 class="text-gray-600 text-base sm:text-lg font-bold">Make Payment</h3><p class="text-gray-500 text-sm sm:text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus.</p></div>
       </div>
-
-      <!-- Step 3 -->
       <div class="flex items-start space-x-4">
-        <div class="w-12 h-16 flex items-center justify-center">
-          <img src="./Pic/Group 11.svg" alt="">
-        </div>
-        <div>
-          <h3 class="text-gray-600 text-base sm:text-lg font-bold">Reach Airport on Selected Date</h3>
-          <p class="text-gray-500 text-sm sm:text-base">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus.
-          </p>
-        </div>
+        <div class="w-12 h-16 flex items-center justify-center"><img src="./Pic/Group 11.svg" alt=""></div>
+        <div><h3 class="text-gray-600 text-base sm:text-lg font-bold">Reach Airport on Selected Date</h3><p class="text-gray-500 text-sm sm:text-base">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus.</p></div>
       </div>
     </div>
-
-    <!-- Right Content -->
     <div class="relative flex flex-col items-start space-y-6 md:space-y-0">
-      <!-- Main Card -->
       <div class="bg-white rounded-3xl shadow-lg w-full sm:w-96 p-4">
         <img class="w-full h-40 rounded-2xl mb-4 object-cover" src="./Pic/woman.jpg" alt="">
         <h3 class="text-zinc-950 text-lg font-semibold">Trip To Greece</h3>
         <p class="text-slate-500 text-sm sm:text-base">14-29 June · by Robbin Joseph</p>
         <p class="mt-2 text-slate-500 text-sm">24 people going</p>
       </div>
-
-      <!-- Small Ongoing Card -->
       <div class="bg-white rounded-2xl shadow-lg w-full sm:w-64 p-4 md:absolute md:top-48 md:left-40">
         <div class="flex items-center space-x-3 mb-2">
-          <div class="w-12 h-12 rounded-full bg-white shadow flex items-center justify-center">
-            <img class="w-10 h-10 rounded-3xl" src="./Pic/9999.png" alt="">
-          </div>
-          <div>
-            <p class="text-slate-500 text-sm">Ongoing</p>
-            <h4 class="text-zinc-950 text-base sm:text-lg font-semibold">Trip to Rome</h4>
-          </div>
+          <div class="w-12 h-12 rounded-full bg-white shadow flex items-center justify-center"><img class="w-10 h-10 rounded-3xl" src="./Pic/9999.png" alt=""></div>
+          <div><p class="text-slate-500 text-sm">Ongoing</p><h4 class="text-zinc-950 text-base sm:text-lg font-semibold">Trip to Rome</h4></div>
         </div>
-        <p>
-          <span class="text-indigo-400 text-sm">40%</span>
-          <span class="text-zinc-950 text-sm">completed</span>
-        </p>
-        <div class="w-full h-2 bg-neutral-100 rounded-full mt-2">
-          <div class="w-2/5 h-2 bg-indigo-400 rounded-full"></div>
-        </div>
+        <p><span class="text-indigo-400 text-sm">40%</span><span class="text-zinc-950 text-sm"> completed</span></p>
+        <div class="w-full h-2 bg-neutral-100 rounded-full mt-2"><div class="w-2/5 h-2 bg-indigo-400 rounded-full"></div></div>
       </div>
     </div>
   </div>
@@ -260,55 +180,30 @@
 <!-- Book trip end -->
 
 
-
 <!-- Testimonials -->
 <section class="w-full max-w-[1165px] mx-auto py-16 px-4">
   <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
-    
-    <!-- Left Content -->
     <div class="text-center md:text-left">
-      <p class="text-gray-500 text-sm sm:text-lg font-semibold uppercase">
-        Testimonials
-      </p>
-      <h2 class="text-indigo-950 text-3xl sm:text-5xl font-bold mt-4 leading-snug">
-        What people say <br class="hidden sm:block"/> about Us.
-      </h2>
+      <p class="text-gray-500 text-sm sm:text-lg font-semibold uppercase">Testimonials</p>
+      <h2 class="text-indigo-950 text-3xl sm:text-5xl font-bold mt-4 leading-snug">What people say <br class="hidden sm:block"/> about Us.</h2>
     </div>
-
-    <!-- Right Content -->
     <div class="relative flex flex-col items-start">
-      <!-- Profile Image -->
-      <img 
-        class="w-12 sm:w-16 h-12 sm:h-16 rounded-full mb-4 sm:mb-0 sm:absolute sm:-left-16 top-0"
-        src="./Pic/Image.svg" 
-        alt="Reviewer"
-      />
-      <!-- Review Card -->
-      <div class="w-full sm:ml-6 shadow-2xl p-4 sm:p-5 rounded-3xl">
-        <p class="text-gray-500 text-sm sm:text-base leading-relaxed">
-          On the Windows talking painted pasture yet its express parties use.
-          Sure last upon he same as knew next. Of believed or diverted no.
-        </p>
-      </div>
-      <!-- Reviewer Info -->
-      <div class="w-full sm:ml-6 mt-4 sm:mt-6 shadow-2xl p-4 sm:p-5 rounded-3xl inline-block">
-        <p class="text-gray-700 text-base sm:text-lg font-semibold">Mike Taylor</p>
-        <p class="text-gray-500 text-xs sm:text-sm">Lahore, Pakistan</p>
-      </div>
+      <img class="w-12 sm:w-16 h-12 sm:h-16 rounded-full mb-4 sm:mb-0 sm:absolute sm:-left-16 top-0" src="./Pic/Image.svg" alt="Reviewer"/>
+      <div class="w-full sm:ml-6 shadow-2xl p-4 sm:p-5 rounded-3xl"><p class="text-gray-500 text-sm sm:text-base leading-relaxed">On the Windows talking painted pasture yet its express parties use. Sure last upon he same as knew next. Of believed or diverted no.</p></div>
+      <div class="w-full sm:ml-6 mt-4 sm:mt-6 shadow-2xl p-4 sm:p-5 rounded-3xl inline-block"><p class="text-gray-700 text-base sm:text-lg font-semibold">Mike Taylor</p><p class="text-gray-500 text-xs sm:text-sm">Lahore, Pakistan</p></div>
     </div>
   </div>
 </section>
 <!-- Testimonials end -->
 
 
-
 <!-- Logos -->
 <section class="w-full max-w-[1073px] mx-auto h-auto flex flex-wrap items-center justify-center gap-8 sm:gap-12 mt-9 px-4">
-  <img class="w-20 sm:w-32 h-20 sm:h-32 mix-blend-luminosity" src="./Pic/11.png" alt="">
-  <img class="w-32 sm:w-44 h-20 sm:h-28 mix-blend-luminosity" src="./Pic/22.png" alt="">
-  <img class="w-28 sm:w-40 h-28 sm:h-40" src="./Pic/33.png" alt="">
-  <img class="w-28 sm:w-40 h-6 sm:h-8 mix-blend-luminosity" src="./Pic/44.png" alt="">
-  <img class="w-16 sm:w-24 h-4 sm:h-5 mix-blend-luminosity" src="./Pic/55.png" alt="">
+  <img class="w-20 sm:w-32 h-20 sm:h-32 mix-blend-luminosity hover:scale-110 active:scale-110 focus:scale-110 transition" src="./Pic/11.png" alt="">
+  <img class="w-32 sm:w-44 h-20 sm:h-28 mix-blend-luminosity hover:scale-110 active:scale-110 focus:scale-110 transition" src="./Pic/22.png" alt="">
+  <img class="w-28 sm:w-40 h-28 sm:h-40 hover:scale-110 active:scale-110 focus:scale-110 transition" src="./Pic/33.png" alt="">
+  <img class="w-28 sm:w-40 h-6 sm:h-8 mix-blend-luminosity hover:scale-110 active:scale-110 focus:scale-110 transition" src="./Pic/44.png" alt="">
+  <img class="w-16 sm:w-24 h-4 sm:h-5 mix-blend-luminosity hover:scale-110 active:scale-110 focus:scale-110 transition" src="./Pic/55.png" alt="">
 </section>
 <!-- Logos end -->
 
@@ -323,7 +218,7 @@
       <img class="mr-2 w-5 h-5" src="./Pic/Group 46.svg" alt="">
       <input type="email" placeholder="Your email" class="flex-1 text-slate-700 text-sm outline-none">
     </div>
-    <button class="w-full sm:w-44 h-12 sm:h-16 bg-red-400 text-white text-sm sm:text-base font-semibold rounded-[10px] hover:bg-red-500 transition">Subscribe</button>
+    <button class="w-full sm:w-44 h-12 sm:h-16 bg-red-400 text-white text-sm sm:text-base font-semibold rounded-[10px] hover:bg-red-500 active:bg-red-500 focus:bg-red-500 transition">Subscribe</button>
   </div>
 </section>
 <!-- Subscribe end -->
@@ -339,38 +234,38 @@
     <div>
       <h3 class="text-zinc-950 text-base sm:text-lg font-bold mb-4">Company</h3>
       <ul class="space-y-2 text-gray-500 text-sm sm:text-base">
-        <li><a href="#">About</a></li>
-        <li><a href="#">Careers</a></li>
-        <li><a href="#">Mobile</a></li>
+        <li class="hover:text-indigo-600 active:text-indigo-600 focus:text-indigo-600"><a href="#">About</a></li>
+        <li class="hover:text-indigo-600 active:text-indigo-600 focus:text-indigo-600"><a href="#">Careers</a></li>
+        <li class="hover:text-indigo-600 active:text-indigo-600 focus:text-indigo-600"><a href="#">Mobile</a></li>
       </ul>
     </div>
     <div>
       <h3 class="text-zinc-950 text-base sm:text-lg font-bold mb-4">Contact</h3>
       <ul class="space-y-2 text-gray-500 text-sm sm:text-base">
-        <li><a href="#">Help/FAQ</a></li>
-        <li><a href="#">Press</a></li>
-        <li><a href="#">Affiliates</a></li>
+        <li class="hover:text-indigo-600 active:text-indigo-600 focus:text-indigo-600"><a href="#">Help/FAQ</a></li>
+        <li class="hover:text-indigo-600 active:text-indigo-600 focus:text-indigo-600"><a href="#">Press</a></li>
+        <li class="hover:text-indigo-600 active:text-indigo-600 focus:text-indigo-600"><a href="#">Affiliates</a></li>
       </ul>
     </div>
     <div>
       <h3 class="text-zinc-950 text-base sm:text-lg font-bold mb-4">More</h3>
       <ul class="space-y-2 text-gray-500 text-sm sm:text-base">
-        <li><a href="#">Airlinefees</a></li>
-        <li><a href="#">Airline</a></li>
-        <li><a href="#">Low fare tips</a></li>
+        <li class="hover:text-indigo-600 active:text-indigo-600 focus:text-indigo-600"><a href="#">Airlinefees</a></li>
+        <li class="hover:text-indigo-600 active:text-indigo-600 focus:text-indigo-600"><a href="#">Airline</a></li>
+        <li class="hover:text-indigo-600 active:text-indigo-600 focus:text-indigo-600"><a href="#">Low fare tips</a></li>
       </ul>
     </div>
     <div class="space-y-6 col-span-2 md:col-span-1">
       <div class="flex items-center space-x-4">
-        <a href="#" class="w-8 sm:w-10 h-8 sm:h-10 flex items-center justify-center rounded-full bg-gray-100"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" class="w-4 sm:w-5 h-4 sm:h-5" /></a>
-        <a href="#" class="w-8 sm:w-10 h-8 sm:h-10 flex items-center justify-center rounded-full bg-gray-100"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png" class="w-4 sm:w-5 h-4 sm:h-5" /></a>
-        <a href="#" class="w-8 sm:w-10 h-8 sm:h-10 flex items-center justify-center rounded-full bg-gray-100"><img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" class="w-4 sm:w-5 h-4 sm:h-5" /></a>
+        <a href="#" class="w-8 sm:w-10 h-8 sm:h-10 flex items-center justify-center rounded-full bg-gray-100 hover:scale-110 active:scale-110 focus:scale-110 transition"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" class="w-4 sm:w-5 h-4 sm:h-5" /></a>
+        <a href="#" class="w-8 sm:w-10 h-8 sm:h-10 flex items-center justify-center rounded-full bg-gray-100 hover:scale-110 active:scale-110 focus:scale-110 transition"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png" class="w-4 sm:w-5 h-4 sm:h-5" /></a>
+        <a href="#" class="w-8 sm:w-10 h-8 sm:h-10 flex items-center justify-center rounded-full bg-gray-100 hover:scale-110 active:scale-110 focus:scale-110 transition"><img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" class="w-4 sm:w-5 h-4 sm:h-5" /></a>
       </div>
       <div>
         <p class="text-gray-500 text-xs sm:text-sm mb-3">Discover our app</p>
         <div class="flex flex-wrap gap-4">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" class="h-8 sm:h-10">
-          <img src="./Pic/Play Store.svg" class="h-8 sm:h-10">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" class="h-8 sm:h-10 hover:scale-105 active:scale-105 focus:scale-105 transition">
+          <img src="./Pic/Play Store.svg" class="h-8 sm:h-10 hover:scale-105 active:scale-105 focus:scale-105 transition">
         </div>
       </div>
     </div>
@@ -381,9 +276,6 @@
 </footer>
 <!-- Footer end -->
 
-
 <script src="./index.js"></script>
-
-
 </body>
 </html>
