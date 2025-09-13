@@ -10,41 +10,91 @@
 
 <!-- Navbar start -->
 <header class="w-full max-w-[1600px] h-auto flex items-center justify-between mx-auto mt-5 px-4 md:px-10 relative">
+  <!-- Left: Logo -->
   <div class="flex items-center space-x-4">
+    <!-- Mobile Menu Button -->
     <button id="menu-btn" class="block md:hidden text-3xl text-gray-800 focus:outline-none">☰</button>
-    <div class="flex items-center space-x-2">
-      <img src="./Pic/Logo.svg" alt="Logo">
+    
+    <!-- Logo with Name -->
+    <div class="flex items-center">
+      <img src="./Pic/Logo.svg" alt="Logo" class="h-8 md:h-10">
+      <span class="ml-2 text-xl md:text-2xl font-bold text-gray-900"></span>
     </div>
   </div>
+
+  <!-- Middle: Navigation (Desktop only) -->
   <nav class="hidden md:block">
     <ul class="flex space-x-12 text-gray-800 text-base font-['Google_Sans']">
-      <li class="hover:text-green-700 focus:text-green-700 active:text-green-700"><a href="#">Destinations</a></li>
-      <li class="hover:text-green-700 focus:text-green-700 active:text-green-700"><a href="#">Hotels</a></li>
-      <li class="hover:text-green-700 focus:text-green-700 active:text-green-700"><a href="#">Flights</a></li>
-      <li class="hover:text-green-700 focus:text-green-700 active:text-green-700"><a href="#">Bookings</a></li>
+      <li class="hover:text-green-700"><a href="#">Destinations</a></li>
+      <li class="hover:text-green-700"><a href="#">Hotels</a></li>
+      <li class="hover:text-green-700"><a href="#">Flights</a></li>
+      <li class="hover:text-green-700"><a href="#">Bookings</a></li>
     </ul>
   </nav>
-  <div class="flex items-center space-x-3 sm:space-x-6">
-    <button class="w-20 sm:w-24 h-10 border border-gray-800 rounded-[5px] text-gray-800 text-sm sm:text-base font-medium hover:bg-[#e5533c] hover:text-white active:bg-[#e5533c] active:text-white focus:bg-[#e5533c] focus:text-white transition">Login</button>
-    <button class="w-20 sm:w-24 h-10 border border-gray-800 rounded-[5px] text-gray-800 text-sm sm:text-base font-medium hover:bg-[#e5533c] hover:text-white active:bg-[#e5533c] active:text-white focus:bg-[#e5533c] focus:text-white transition">Sign up</button>
-    <div class="flex items-center space-x-1">
-      <span class="text-gray-800 text-sm sm:text-base font-medium">EN </span>
-      <img class="w-4 h-4 sm:w-6 sm:h-6" src="./Pic/Group 46.svg" alt="">
-    </div>
+
+
+<!-- Buttons -->
+<div class="flex items-center space-x-3 sm:space-x-6 md:space-x-8">
+  <button id="openLogin"
+    class="w-20 sm:w-24 h-10 border border-gray-800 rounded-[5px] text-gray-800 text-sm sm:text-base font-medium hover:bg-[#e5533c] hover:text-white transition">
+    Login
+  </button>
+
+  <button id="openSignup"
+    class="w-20 sm:w-24 h-10 border border-gray-800 rounded-[5px] text-gray-800 text-sm sm:text-base font-medium hover:bg-[#e5533c] hover:text-white transition">
+    Sign up
+  </button>
+</div>
+
+<!-- Login Modal -->
+<div id="loginModal" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50">
+  <div class="bg-white w-96 rounded-lg shadow-lg p-6 relative">
+    <button id="closeLogin" class="absolute top-2 right-2 text-gray-600 text-xl">✕</button>
+    <h2 class="text-xl font-bold text-gray-800 mb-4">Login</h2>
+    <form id="loginForm" class="space-y-4">
+      <input type="email" id="loginEmail" placeholder="Email" required
+        class="w-full border border-gray-300 rounded-md px-3 py-2">
+      <input type="password" id="loginPassword" placeholder="Password" required
+        class="w-full border border-gray-300 rounded-md px-3 py-2">
+      <button type="submit" class="w-full bg-[#e5533c] text-white py-2 rounded-md">Login</button>
+    </form>
   </div>
+</div>
+
+<!-- Signup Modal -->
+<div id="signupModal" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50">
+  <div class="bg-white w-96 rounded-lg shadow-lg p-6 relative">
+    <button id="closeSignup" class="absolute top-2 right-2 text-gray-600 text-xl">✕</button>
+    <h2 class="text-xl font-bold text-gray-800 mb-4">Sign Up</h2>
+    <form id="signupForm" class="space-y-4">
+      <input type="text" id="signupName" placeholder="Full Name" required
+        class="w-full border border-gray-300 rounded-md px-3 py-2">
+      <input type="email" id="signupEmail" placeholder="Email" required
+        class="w-full border border-gray-300 rounded-md px-3 py-2">
+      <input type="password" id="signupPassword" placeholder="Password" required
+        class="w-full border border-gray-300 rounded-md px-3 py-2">
+      <button type="submit" class="w-full bg-[#e5533c] text-white py-2 rounded-md">Sign Up</button>
+    </form>
+  </div>
+</div>
+
+
+<!-- Mobile Menu -->
   <div id="menu" class="fixed top-0 left-0 w-64 h-full bg-white shadow-lg transform -translate-x-full transition-transform duration-300 md:hidden z-50">
     <div class="p-6">
       <button id="close-btn" class="text-2xl text-gray-800 mb-6">✕</button>
       <ul class="space-y-6 text-gray-800 text-lg font-['Google_Sans']">
-        <li class="hover:text-green-700 focus:text-green-700 active:text-green-700"><a href="#">Destinations</a></li>
-        <li class="hover:text-green-700 focus:text-green-700 active:text-green-700"><a href="#">Hotels</a></li>
-        <li class="hover:text-green-700 focus:text-green-700 active:text-green-700"><a href="#">Flights</a></li>
-        <li class="hover:text-green-700 focus:text-green-700 active:text-green-700"><a href="#">Bookings</a></li>
+        <li class="hover:text-green-700"><a href="#">Destinations</a></li>
+        <li class="hover:text-green-700"><a href="#">Hotels</a></li>
+        <li class="hover:text-green-700"><a href="#">Flights</a></li>
+        <li class="hover:text-green-700"><a href="#">Bookings</a></li>
       </ul>
     </div>
   </div>
 </header>
+
 <!-- Navbar end -->
+
 
 
 <!-- Hero Section -->
@@ -63,8 +113,8 @@
   </div>
   <div class="mt-8 md:mt-0 relative flex justify-center">
     <img class="w-[350px] sm:w-[500px] md:w-[700px] h-auto" src="./Pic/hero-main-log.png" alt="Hero">
-    <img class="absolute top-[100px] sm:top-[140px] left-[60%] sm:left-[1000px] w-[80px] sm:w-[120px]" src="./Pic/plane.svg" alt="plane">
-    <img class="absolute top-[200px] sm:top-[320px] left-[70%] sm:left-[1150px] w-[70px] sm:w-[100px]" src="./Pic/plane.svg" alt="plane">
+    <img class="absolute top-[100px] lg:top-[140px] left-[60%] lg:left-[1000px] w-[80px] lg:w-[120px]" src="./Pic/plane.svg" alt="plane">
+    <img class="absolute top-[200px] lg:top-[320px] left-[70%] lg:left-[1150px] w-[70px] lg:w-[100px]" src="./Pic/plane.svg" alt="plane">
   </div>
 </section>
 <!-- Hero end -->
@@ -277,5 +327,6 @@
 <!-- Footer end -->
 
 <script src="./index.js"></script>
+<script src="./server.js"></script>
 </body>
 </html>
